@@ -155,7 +155,7 @@ function App() {
 
   // Analyze image with Gemini Vision API
   const analyzeImageWithVision = async (imageData, userPrompt) => {
-    const apiKey = process.env.REACT_APP_GEMINI_API_KEY;
+    const apiKey = 'AIzaSyD2JO0MzJQPfeV9ag_o31MpdPNz2JAbHCo';
     
     console.log('Analyzing image with Gemini Vision API...');
     
