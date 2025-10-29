@@ -9,7 +9,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [uploadedFiles, setUploadedFiles] = useState([]);
   const [generatedHTML, setGeneratedHTML] = useState('');
-  const [viewMode, setViewMode] = useState('preview'); // 'preview' or 'code'
+  const [viewMode, setViewMode] = useState('preview'); 
   const [editableCode, setEditableCode] = useState('');
   const messagesEndRef = useRef(null);
   const jsonFileInputRef = useRef(null);
@@ -155,7 +155,7 @@ function App() {
 
   // Analyze image with Gemini Vision API
   const analyzeImageWithVision = async (imageData, userPrompt) => {
-    const apiKey = 'AIzaSyD2JO0MzJQPfeV9ag_o31MpdPNz2JAbHCo';
+    const apiKey = process.env.REACT_APP_GEMINI_API_KEY;
     
     console.log('Analyzing image with Gemini Vision API...');
     
