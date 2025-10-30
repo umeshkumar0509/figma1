@@ -580,7 +580,7 @@ Extract EXACT color codes from the design. Be extremely precise with all styling
                   <div className="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg></div>
                   <p>Start Generating</p>
                   <div className="file-info-container">
-                    <p className="file-info">Upload a screenshot + Figma JSON, or <br />and type start in text field.
+                    <p className="file-info">Upload a screenshot + Figma JSON, <br />and type start in text field.
                       </p>
                   </div>
                 </div>
@@ -727,7 +727,7 @@ Extract EXACT color codes from the design. Be extremely precise with all styling
                 <textarea
                   value={prompt}
                   onChange={(e) => setPrompt(e.target.value)}
-                  placeholder={uploadedFiles.length > 0 ? "Ask a question about your uploaded files..." : "Type your message or upload files..."}
+                  placeholder={uploadedFiles.length > 0 ? "Ask a question about your uploaded files..." : "Upload both files and type 'start'..."}
                   className="message-input"
                   rows="1"
                   onKeyDown={(e) => {
